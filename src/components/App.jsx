@@ -8,7 +8,11 @@ function App() {
     return (
         <div>
             <Header />
-            <Note />
+            <Note 
+               key={n.key}
+               title={n.title}
+               content={n.content}
+            />
             <Footer />
         </div>
     );
